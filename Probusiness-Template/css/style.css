@@ -129,7 +129,7 @@ a:focus{
 .pdt-70{ padding-top: 70px; }
 
 .content{
-    padding:30px 0 60px;
+    padding:10px 0 60px;
     position: relative;
 }
 
@@ -420,7 +420,7 @@ a:focus{
 ====================================*/
 .page_head {
     border-bottom: 3px solid #dcdbd7;
-	padding:40px 0;
+	padding:10px 0;
     clear:both;
 }
 
@@ -724,7 +724,7 @@ ul.sm li *,ul.sm li *:before,ul.sm li *:after{-moz-box-sizing:content-box;-webki
     border:none;
 }
 .sticky-wrapper #menu-bar{
-    padding: 30px 0;
+    padding: 10px 0;
 }
 .sticky-wrapper.is-sticky #menu-bar{
     padding: 0;
