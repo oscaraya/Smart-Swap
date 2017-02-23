@@ -11,7 +11,7 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/bootstrap-select.css">
-    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="css/datepicker.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
     <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
@@ -20,7 +20,7 @@
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="js/bootstrap-select.js"></script>
-  	<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+  	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,6 +32,7 @@
 	    $(window).load(function(){
 	        $("#menu-bar").sticky({ topSpacing: 0 });
 	        initWishListPage();
+	        $('#datepicker').datepicker();
 	    });
 	</script>
 	<script type="text/javascript" src="js/wishlist.js"></script>
@@ -135,7 +136,7 @@
                             <ul class="nav navbar-nav sm" data-smartmenus-id="1487479011213646">
                                 <li><a href="index.html"><span class="data-hover" data-hover="Home">Home</span></a></li>
                                   <li><a href="catalog.html"><span class="data-hover" data-hover="Catalog">Catalog</span></a></li>
-                                <li><a href="#"><span class="data-hover" data-hover="Items">Items</span></a></li>
+                                <li><a href="items.html"><span class="data-hover" data-hover="Items">Items</span></a></li>
                                 <li class="active"><a><span class="data-hover" data-hover="Wishlist">Wishlist</span></a></li>
                                <li><a href="#"><span class="data-hover" data-hover="Request">Request</span></a>
                                     <ul class="dropdown-menu">
@@ -178,7 +179,6 @@
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>#</th>
 					<th>Item</th>
 					<th>Category</th>
 					<th>Exchange with</th>
@@ -189,39 +189,36 @@
 			</thead>
 			<tbody>
 				<tr>
-					<th scope="row">1</th>
 					<td>Fortified Bi-Cycle</td>
 					<td>Bi_Cycle</td>
 					<td>Fortified Red Bi-Cycle</td>
 					<td>11/03/2017</td>
 					<td>Trying to findout new bi cycle</td>
 					<td>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
+						<div class="col-md-1 deleteline"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
+						<div class="col-md-1 editline"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">2</th>
 					<td>Fortified Bi-Cycle</td>
 					<td>Bi_Cycle</td>
 					<td>Fortified Red Bi-Cycle</td>
 					<td>11/03/2017</td>
 					<td>Trying to findout new bi cycle</td>
 					<td>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
+						<div class="col-md-1 deleteline"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
+						<div class="col-md-1 editline"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
 					</td>
 				</tr>
 				<tr>
-					<th scope="row">3</th>
 					<td>Fortified Bi-Cycle</td>
 					<td>Bi_Cycle</td>
 					<td>Fortified Red Bi-Cycle</td>
 					<td>11/03/2017</td>
 					<td>Trying to findout new bi cycle</td>
 					<td>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
-						<div class="col-md-1"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
+						<div class="col-md-1 deleteline"><a style="cursor:pointer;" class="text-danger"><i class="fa fa-times"></i></a></div>
+						<div class="col-md-1 editline"><a style="cursor:pointer;" class="text-warning"><i class="fa fa-pencil"></i></a></div>
 					</td>
 				</tr>
 			</tbody>
@@ -289,11 +286,9 @@
 							<p class="h4">Expected Date</p>
 						</div>
 						<div class="col-md-8">
-							<div class="input-group date" data-provide="datepicker">
-							    <input type="text" class="form-control">
-							    <div class="input-group-addon">
-							        <span class="glyphicon glyphicon-th"></span>
-							    </div>
+							<div class="input-group date" id="datepicker" data-date="12/02/2012" data-date-format="dd/mm/yyyy">
+							    <input size="16" class="form-control add-on" type="text" value="12/02/2012" readonly>
+							    <span class="input-group-addon add-on"><i class="glyphicon glyphicon-calendar"></i></span>
 							</div>
 						</div>
 					</div>
