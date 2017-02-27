@@ -76,7 +76,7 @@
                                                 <a href="myprofile.html">My Profile</a>
                                             </li>
                                             <li>
-                                                <a href="#">My History</a>
+                                                <a href="myhistory.html">My History</a>
                                             </li>
                                             <li>
                                                 <a href="cart.html">Sign out</a>
@@ -120,14 +120,13 @@
                         <div class="navbar-collapse collapse">
                             <ul class="nav navbar-nav sm" data-smartmenus-id="1487479011213646">
                                 <li><a href="index.html"><span class="data-hover" data-hover="Home">Home</span></a></li>
-                                  <li class="active"><a href="catalog.html"><span class="data-hover" data-hover="Catalog">Catalog</span></a></li>
+                                <li><a href="catalog.html"><span class="data-hover" data-hover="Catalog">Catalog</span></a></li>
                                 <li><a href="#"><span class="data-hover" data-hover="Items">Items</span></a></li>
                                 <li><a href="wishlist.html"><span class="data-hover" data-hover="Wishlist">Wishlist</span></a></li>
-                               <li><a href="#"><span class="data-hover" data-hover="Request">Request</span></a>
+                                <li><a href="#"><span class="data-hover" data-hover="Request">Request</span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="services.html">My Request</a></li>
                                         <li><a href="incomingrequest.html">Incoming Request</a></li>
-
                                     </ul>
                                 </li>
                                 <li><a href="#"><span class="data-hover" data-hover="Community">Community</span></a></li>
@@ -147,18 +146,125 @@
 <section class="content">
 <div class="container">
 <div class="row">
-<div class="col-md-9">
-	<div style="">
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-6 branding">
-				<figure class="touching effect-bubba">
-					<img src="images/profile/profileimage.png" alt="profile img">
+<div class="col-md-12">
+	<div class="row">
+		<div class="col-lg-2 col-md-4 col-sm-6 branding">
+			<figure class="touching effect-bubba">
+				<img src="images/profile/profileimage.png" alt="profile img">
 
-					<div class="option">
-						<a href="#" class="fa fa-link"></a>
-						<a href="images/profile/profileimage.png" class="fa fa-search mfp-image"></a>
+				<div class="option">
+					<a href="#" class="fa fa-link"></a>
+					<a href="images/profile/profileimage.png" class="fa fa-search mfp-image"></a>
+				</div>
+			</figure>
+			<h1>
+				Mr. Patrick
+			</h1>
+			<span>
+				patrick.doe
+			</span>
+			<div class="fa-hover"><a href="#"><i class="fa fa-map-marker"></i> Singapore</a></div>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9">
+			<div class="col-lg-9">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#Popular" class="fa fa-map-marker"> My Address</a></li>
+					<li class=""><a data-toggle="tab" href="#Recent">My Friends</a></li>
+					<li class=""><a data-toggle="tab" href="#Recent-Comment">My Payment Methods</a></li>
+				</ul>
+
+				<div class="tab-content clearfix">
+					<div id="Popular" class="tab-pane fade active in">
+						<ul class="recent_tab_list">
+							<li>
+                                <div>
+									<h4><span style="font-weight: bold;">Address 1 (Default)</span></h4>
+								</div>
+								<p>Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus.</p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+                            </li>
+							<li>
+								<div>
+									<h4><span>Address 2</span></h4>
+								</div>
+								<p>Donec in ut odio libero, at vulputate urna. </p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-warning btn-sm btn-block" type="button">Set Default</button>
+								</div>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h4><span>Address 3</span></h4>
+								</div>
+								<p>Donec in ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus.</p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-warning btn-sm btn-block" type="button">Set Default</button>
+								</div>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+							</li>
+						</ul>
 					</div>
-				</figure>
+					<div id="Recent" class="tab-pane fade">
+						<ul class="comments">
+							<li class="comments_list clearfix">
+								<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/teams/oscar.jpg" alt="#"></a>
+								<h4><a href="#">Oscar</a><h4>
+							</li>
+							<li class="comments_list clearfix">
+								<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/teams/lokesh.jpg" alt="#"></a>
+								<h4><a href="#">Lokesh</a><h4>
+							</li>
+							<li class="comments_list clearfix">
+								<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/teams/su.jpg" alt="#"></a>
+								<h4><a href="#">Su</a><h4>
+							</li>
+						</ul>
+					</div>
+					<div id="Recent-Comment" class="tab-pane fade">
+						<ul class="recent_tab_list">
+							<li>
+                                <div>
+									<h4><strong><span>Credit Card 1 (Default)</span></strong></h4>
+								</div>
+								<p>Master Card XXXX-XXXX-XXXX-1234</p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+                            </li>
+							<li>
+								<div>
+									<h4><span>Credit Card 2</span></h4>
+								</div>
+								<p>Visa XXXX-XXXX-XXXX-1234</p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-warning btn-sm btn-block" type="button">Set Default</button>
+								</div>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+							</li>
+							<li>
+								<div>
+									<h4><span>Credit Card 3</span></h4>
+								</div>
+								<p>American Express XXXX-XXXX-XXXX-1234</p>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-warning btn-sm btn-block" type="button">Set Default</button>
+								</div>
+								<div class="col-lg-3 col-md-3 col-xs-12">
+									<button class="btn btn-danger btn-sm btn-block" type="button">Delete</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
